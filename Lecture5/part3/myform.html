@@ -1,46 +1,49 @@
 <html>
     <head>
-        <title>My first HTML</title>
-        <link rel="stylesheet" type="text/css" medi="screen" href="../html/bulma.min.css" />
+        <title>My first HTML Part3</title>
+        <link rel="stylesheet" type="text/css" medi="screen" href="../../Lecture4/html/bulma.min.css" />
     </head>
     <body>
+       
+
         <h1>Registration Form</h1><hr/>
         <div class="container">
             <form>
                 <div class="field">
                     <label class="label">Name</label>
-                    <input class="input" type="text"/>
+                    <input id="name" class="input" type="text"/>
                 </div>
 
                 <div class="field">
                     <label class="label">Surname</label>
-                    <input class="input" type="text"/>
+                    <input id="surname" class="input" type="text"/>
                 </div>
     
                 <div class="field">
                     <label class="label">Gender</label>
-                    <input class="input" type="text"/>
+                    <input id="gender" class="input" type="text"/>
                 </div>
                 
                 <div class="field">
                     <label class="label">Contact Number</label>
-                    <input class="input" type="number"/>
+                    <input id="num" class="input" type="number"/>
                 </div>
 
                 <div class="field">
                     <label class="label">Address</label>
-                    <input class="input" type="text"/>
+                    <input id="address" class="input" type="text"/>
                 </div>
                 
                 <div class="field">
                     <label class="label">Age</label>
-                    <input class="input" type="number"/>
+                    <input id="age" class="input" type="number"/>
                 </div>
     
                 <div class="field">
-                    <input class="button is-primary" type="button" value="Submit" onclick="alert('Boooom')"/>    
+                    <input id="submit" class="button is-primary" type="button" value="Submit" />    
                 </div>           
             </form>
+            <script src="script.js"></script>
         </div>
   </body>
 </html>

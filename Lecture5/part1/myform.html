@@ -1,20 +1,26 @@
 <html>
     <head>
         <title>My first HTML</title>
-        <link rel="stylesheet" type="text/css" medi="screen" href="../html/bulma.min.css" />
+        <link rel="stylesheet" type="text/css" medi="screen" href="../../Lecture4/html/bulma.min.css" />
     </head>
     <body>
+        <script>
+            function hoverOverSurname(){
+                alert("Hovering Over Surname");
+            }
+        </script>
+
         <h1>Registration Form</h1><hr/>
         <div class="container">
             <form>
                 <div class="field">
                     <label class="label">Name</label>
-                    <input class="input" type="text"/>
+                    <input class="input" type="text" onmouseover="alert('You moved over name!')"/>
                 </div>
 
                 <div class="field">
                     <label class="label">Surname</label>
-                    <input class="input" type="text"/>
+                    <input class="input" type="text" onmousemove="hoverOverSurname()"/>
                 </div>
     
                 <div class="field">

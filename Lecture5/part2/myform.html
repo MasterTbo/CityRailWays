@@ -1,20 +1,22 @@
 <html>
     <head>
-        <title>My first HTML</title>
-        <link rel="stylesheet" type="text/css" medi="screen" href="../html/bulma.min.css" />
+        <title>My first HTML Part2</title>
+        <link rel="stylesheet" type="text/css" medi="screen" href="../../Lecture4/html/bulma.min.css" />
     </head>
     <body>
+       
+
         <h1>Registration Form</h1><hr/>
         <div class="container">
             <form>
                 <div class="field">
                     <label class="label">Name</label>
-                    <input class="input" type="text"/>
+                    <input id="name" class="input" type="text" onmouseover="alert('You moved over name!')"/>
                 </div>
 
                 <div class="field">
                     <label class="label">Surname</label>
-                    <input class="input" type="text"/>
+                    <input id="surname" class="input" type="text"/>
                 </div>
     
                 <div class="field">
@@ -38,9 +40,15 @@
                 </div>
     
                 <div class="field">
-                    <input class="button is-primary" type="button" value="Submit" onclick="alert('Boooom')"/>    
+                    <input id="submit" class="button is-primary" type="button" value="Submit" />    
                 </div>           
             </form>
+            <script>
+                    var submitButton = document.getElementById('submit');
+                    submitButton.addEventListener('click', function(event){
+                        alert('Submited');
+                    });
+            </script>
         </div>
   </body>
 </html>
