@@ -1,5 +1,5 @@
 window.onload = function(){
-    event.preventDefault;
+    //event.preventDefault;
     var submitButton = document.getElementById('submit');
     submitButton.addEventListener('click', function(event){
         //alert('Submited in .js file');
