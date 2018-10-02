@@ -80,12 +80,12 @@ function validateAge(){
 function validateNumber(){
     var num = document.getElementById('num');
     var numError = document.getElementById('numError');
-    if(num.value == "" || num.value == undefined){
+    if(num.value == null || num.value == "" || num.value == undefined){
         numError.classList.remove('is-invisible');
     }    
-    else if(num.charAt(0) != 0 && num.charAt(1) != 7 && num.charAt(2) != 3){
+    else if(num.value.charAt(0) != 0 || num.value.charAt(1) != 7 || num.value.charAt(2) != 3){
         numError.classList.remove('is-invisible');
-        numError.innerHTML = "Invalid code";
+        numError.innerHTML = "Invalid code " + num.value.charAt(0) + num.value.charAt(1) + num.value.charAt(2);
     }
     else{
         numError.classList.add('is-invisible');
