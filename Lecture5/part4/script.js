@@ -80,7 +80,8 @@ function validateAge(){
 function validateNumber(){
     var num = document.getElementById('num');
     var numError = document.getElementById('numError');
-    if(num.value == null || num.value == "" || num.value == undefined){
+    if(num.value == null || num.value == "" || num.value == undefined 
+        || num.value < 10 || num.value > 10){
         numError.classList.remove('is-invisible');
     }    
     else if(num.value.charAt(0) != 0 || num.value.charAt(1) != 7 || num.value.charAt(2) != 3){

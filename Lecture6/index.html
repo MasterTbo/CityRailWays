@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Lecture 5 HTML</title>
+        <link rel="stylesheet" type="text/css" medi="screen" href="bulma.min.css" />
+    </head>
+    <body>
+        <h3>Lecture 5</h3><hr>
+        <div class="container">
+            <form id="loginForm">
+                <div class="field">
+                    <label class="label">Client Id</label>
+                    <input id="clientId" class="input" type="text"/>
+                </div>
+
+                <div class="field">
+                    <label class="label">Client Secret</label>
+                    <input id="clientSecret" class="input" type="text"/>
+                </div>
+                <div class="field">
+                    <input id="submit" class="button is-primary" type="button" value="Submit" />    
+                </div> 
+            </form>
+            
+            <!-- this form will list the lines-->
+            <form class="form is-half" id="lines">
+              <div class="field">
+                <label class="label">Lines</label>
+                <select id="lines-select" type="text" >
+                  <option value="" disabled="disabled">No lines available</option>
+                </select>
+              </div>
+              
+              <div class="field">
+                <input type="submit" id="submit-lines" class="button is-primary"/>
+              </div>
+            </form>
+        </div>
+        <div>
+            <form class="form is-half" id="agencyForm">
+                <div id="ag">
+
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
