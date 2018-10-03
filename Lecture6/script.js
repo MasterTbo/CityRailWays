@@ -1,6 +1,9 @@
 window.onload = function(){
     if(hasToken()){
+        //get Agencies
         getAgencies(this.localStorage.getItem('token'));
+        //get Lines
+        getLines(this.localStorage.getItem('token'));
     }
     var sub = this.document.getElementById('submit');
     sub.addEventListener('click', function(event){
@@ -30,7 +33,7 @@ function getAgencies(token){
 }
 
 function addAgenciesToDropDown(agenciesList) {
-    var agenciesSelect = document.getElementById('agencies-select')
+    var agenciesSelect = document.getElementById('agenciesSelect')
     agenciesSelect.options.length = 0
     agenciesSelect.options.add(new Option("Select an option", null, true, true))
     agenciesList.forEach(function(agency) {
@@ -38,12 +41,25 @@ function addAgenciesToDropDown(agenciesList) {
     })
 }
 
-function getLines(){
-    
+function getLines(token){
+    var request = new XMLHttpRequest();
+    request.addEventListener('load', function () {
+        var response = JSON.parse(this.responseText);
+        addLinesToDropDown(response);
+    });
+    request.open('GET', 'https://platform.whereismytransport.com/api/lines', true);
+    request.setRequestHeader('Accept', 'application/json');
+    request.setRequestHeader('Authorization', 'Bearer ' + token);
+    request.send();
 }
 
 function addLinesToDropDown(linesList){
-
+    var linesSelect = document.getElementById('linesSelect')
+    linesSelect.options.length = 0
+    linesSelect.options.add(new Option("Select an option", null, true, true))
+    linesList.forEach(function(line) {
+        linesSelect.options.add(new Option(line.name, line.id, false, false))
+    })
 }
 
 function hasToken(){
@@ -57,8 +73,6 @@ function hasToken(){
         return false;
     }
 }
-
-
 
 function getClientId(){
     var clientId = document.getElementById('clientId');

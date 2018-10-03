@@ -6,6 +6,7 @@
     <body>
         <h3>Lecture 5</h3><hr>
         <div class="container">
+            <!--This is a login form-->
             <form id="loginForm">
                 <div class="field">
                     <label class="label">Client Id</label>
@@ -20,18 +21,32 @@
                     <input id="submit" class="button is-primary" type="button" value="Submit" />    
                 </div> 
             </form>
+
+            <!-- This will list the agencies-->
+            <form class="form is-half" id="agencies">
+                <div class="field">
+                    <label class="label">Agencies</label>
+                    <select id="agenciesSelect" type="text" >
+                      <option value="" disabled="disabled">No agencies available</option>
+                    </select>
+                </div>
+            
+                <div class="field">
+                    <input type="submit" id="submitAgency" class="button is-primary"/>
+                </div>
+          </form>
             
             <!-- this form will list the lines-->
             <form class="form is-half" id="lines">
               <div class="field">
                 <label class="label">Lines</label>
-                <select id="lines-select" type="text" >
+                <select id="linesSelect" type="text" >
                   <option value="" disabled="disabled">No lines available</option>
                 </select>
               </div>
               
               <div class="field">
-                <input type="submit" id="submit-lines" class="button is-primary"/>
+                <input type="submit" id="submitLines" class="button is-primary"/>
               </div>
             </form>
         </div>
