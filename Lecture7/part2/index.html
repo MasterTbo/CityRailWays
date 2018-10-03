@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Lecture 7 HTML</title>
+        <link rel="stylesheet" type="text/css" medi="screen" href="bulma.min.css" />
+    </head>
+    <body>
+        <h3>Lecture 7</h3><hr>
+        <div class="container">
+            <!--This is a login form-->
+            <form id="loginForm">
+                <div class="field">
+                    <label class="label">Client Id</label>
+                    <input id="clientId" class="input" type="text"/>
+                </div>
+
+                <div class="field">
+                    <label class="label">Client Secret</label>
+                    <input id="clientSecret" class="input" type="text"/>
+                </div>
+                <div class="field">
+                    <input id="submit" class="button is-primary" type="button" value="Submit" />    
+                </div> 
+            </form>
+        </div>
+
+        <!-- This will list the agencies-->
+        <div class="container" id="agencies-form">
+            <form class="form is-half" >
+                <div class="field">
+                    <label class="label">Agencies</label>
+                    <select id="agenciesSelect" type="text" >
+                      <option value="" disabled="disabled">No agencies available</option>
+                    </select>
+              </div>
+            
+              <div class="field">
+                  <input type="submit" id="submitAgency" class="button is-primary"/>
+              </div>
+            </form>
+        </div>
+
+        <!-- this form will list the lines-->
+        <div class="container" id="lines-form">
+            <form class="form is-half">
+              <div class="field">
+                <label class="label">Lines</label>
+                <select id="linesSelect" type="text" >
+                  <option value="" disabled="disabled">No lines available</option>
+                </select>
+              </div>
+              <div class="field">
+                <input type="submit" id="submitLines" class="button is-primary"/>
+                <input value="back" type="submit" id="backToAgency" class="button is-primary"/>
+              </div>
+            </form>
+        </div>
+
+        <!--logout form-->
+        <div class="container" id="logout-form">
+            <form class="form is-half">
+                <div class="field">
+                    <input value="logout" type="submit" id="submit-logout" class="button is-danger"/>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
