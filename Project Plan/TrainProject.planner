@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20180927T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Develop a train scheduling system" note="" work="144000" duration="144000" start="20190627T000000Z" end="20190703T170000Z" work-start="20190627T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="start-no-earlier-than" time="20190627T000000Z"/>
+    </task>
+    <task id="2" name="User requirements" note="" work="1512900" start="20180927T000000Z" end="20181210T131500Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="3" name="Gathering the user requirements" note="" work="1440000" start="20180927T000000Z" end="20181205T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="4" name="Interview the users" note="" work="1440000" start="20180927T000000Z" end="20181205T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="5" name="Analysis of requirements" note="" work="28800" start="20181205T170000Z" end="20181206T170000Z" work-start="20181206T080000Z" percent-complete="17" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="6" name="Brainstorm the requirements deliverables" note="" work="28800" start="20181206T170000Z" end="20181207T170000Z" work-start="20181207T080000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="5" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="7" name="Build prototype" note="" work="15300" start="20181207T170000Z" end="20181210T131500Z" work-start="20181210T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="8" name="Research the system features " note="" work="144000" start="20181003T170000Z" end="20181010T170000Z" work-start="20181004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+      </predecessors>
+      <task id="9" name="Research the libraries" note="" work="144000" start="20181003T170000Z" end="20181010T170000Z" work-start="20181004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="10" name="Develop a database system" note="" work="144000" start="20180927T000000Z" end="20181003T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="11" name="Research the database types" note="" work="144000" start="20180927T000000Z" end="20181003T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="12" name="Project Planning" note="" work="144000" start="20181210T131500Z" end="20181213T131500Z" work-start="20181210T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+      <task id="13" name="Reseearch the programming languages" note="" work="86400" start="20181210T131500Z" end="20181213T131500Z" work-start="20181210T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="14" name="Formulate use cases" note="" work="57600" start="20181210T131500Z" end="20181212T131500Z" work-start="20181210T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="15" name="Implementation version 1 of the system" note="" work="3513600" start="20181213T131500Z" end="20190111T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="12" type="FS"/>
+        <predecessor id="1" predecessor-id="14" type="FS"/>
+      </predecessors>
+      <task id="16" name="System Requirements" note="" work="460800" start="20181213T131500Z" end="20181220T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="17" name="The system must display a google map." note="" work="86400" start="20181213T131500Z" end="20181218T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="18" name="The system must display the train routes on the map" note="" work="144000" start="20181213T131500Z" end="20181220T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="19" name="The system should specify which train to the user must take and the at which platform." note="" work="57600" start="20181213T131500Z" end="20181217T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="20" name="The system must print a ticket for the commuter after purchasing the points." note="" work="28800" start="20181213T131500Z" end="20181214T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="21" name="The ticket must have a QR code for the commuter to scan before boarding the train" note="" work="28800" start="20181213T131500Z" end="20181214T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="22" name="The system should be able to save the amount of points avaiable in the user's account" note="" work="57600" start="20181213T131500Z" end="20181217T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="23" name="The system should keep track of the traffic on the train routes" note="" work="28800" start="20181213T131500Z" end="20181214T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="24" name="Testing" note="" work="28800" start="20181213T131500Z" end="20181214T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="25" name="Application Functionality" note="" work="748800" start="20181220T131500Z" end="20181227T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+        <task id="26" name="Display google map" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="27" name="Display Train routes on the map" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="28" name="Display the train's current location on the map" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="29" name="Display how far the train is from the station" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="30" name="Display minimum amount of points to buy" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="31" name="Specify which train a commuter must take" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="32" name="Specify the train platform to the commuter" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="33" name="If train is full, display the alternative train on the map" note="" work="86400" start="20181220T131500Z" end="20181225T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="34" name="Display current date and time" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="35" name="Display electronic ticket after purchasing the points" note="" work="144000" start="20181220T131500Z" end="20181227T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="36" name="Assign a QR code to a ticket" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="37" name="Save points in user's profile in the database" note="" work="28800" start="20181220T131500Z" end="20181221T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="38" name="Link a credit card" note="" work="86400" start="20181220T131500Z" end="20181225T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="39" name="Test each functionality" note="" work="144000" start="20181220T131500Z" end="20181227T131500Z" work-start="20181220T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="40" name="Commuter's Requirements" note="" work="777600" start="20181227T131500Z" end="20190110T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="25" type="FS"/>
+        </predecessors>
+        <task id="41" name="Commuter registration" note="" work="28800" start="20181227T131500Z" end="20181228T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="42" name="Send commuter's ID" note="" work="28800" start="20181227T131500Z" end="20181228T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="43" name="Commuter buy points on the app" note="" work="86400" start="20181227T131500Z" end="20190101T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="44" name="Commuter buy point at the teller" note="" work="28800" start="20181227T131500Z" end="20181228T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="45" name="Update commuter about any unforeseen circumstances while in train" note="" work="288000" start="20181227T131500Z" end="20190110T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="46" name="Check points balance" note="" work="28800" start="20181227T131500Z" end="20181228T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="47" name="View train departure and arrival timstatione" note="" work="288000" start="20181227T131500Z" end="20190110T131500Z" work-start="20181227T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="48" name="Testing" note="" work="432000" start="20181213T131500Z" end="20190103T131500Z" work-start="20181213T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="49" name="Trip Requirements" note="" work="1094400" start="20181228T131500Z" end="20190111T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="41" type="FS"/>
+        </predecessors>
+        <task id="50" name="Scanning system at the train's door" note="" work="288000" start="20181228T131500Z" end="20190111T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="51" name="Touch pad input screen  for manual ID input" note="" work="288000" start="20181228T131500Z" end="20190111T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="52" name="Charge the commuter per trip when scanning out" note="" work="57600" start="20181228T131500Z" end="20190101T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="53" name="Commuter switch the train" note="" work="230400" start="20181228T131500Z" end="20190104T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="54" name="Display  switching station and platform" note="" work="144000" start="20181228T131500Z" end="20190104T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="55" name="Display destination station and time" note="" work="86400" start="20181228T131500Z" end="20190102T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+        <task id="56" name="Testing" note="" work="230400" start="20181228T131500Z" end="20190109T131500Z" work-start="20181228T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+    </task>
+    <task id="57" name="Project delivery" note="" work="28800" start="20190111T131500Z" end="20190114T131500Z" work-start="20190111T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
+      </predecessors>
+      <task id="58" name="Present a product to the customer" note="" work="28800" start="20190111T131500Z" end="20190114T131500Z" work-start="20190111T131500Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
