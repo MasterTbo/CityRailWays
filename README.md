@@ -14,4 +14,6 @@ another change
 CityRailWays URL: https://cdn.rawgit.com/MasterTbo/CityRailWays/blob/master/Lecture8/part1/index.html
 
 
- https://github.com/MasterTbo/CityRailWays/blob/master/Lecture8/part1/index.html
+jsDelivr: https://cdn.jsdelivr.net/gh/MasterTbo/CityRailWays@blob/master/Lecture8/part1/index.html
+
+File Code: https://github.com/MasterTbo/CityRailWays/blob/master/Lecture8/part1/index.html
