@@ -7,8 +7,8 @@
         * clientSecret: fTV46ARkBaBb+nSNwmBWQm2Eum+I2ik+cBsq6Bsnwso=
 
 
-File Code: https://github.com/MasterTbo/CityRailWays/blob/master/Lecture8/part1/index.html
+File Code: https://github.com/t-b-o/CityRailWays/blob/master/Lecture8/part1/index.html
 
 # Progressive Mobile Applcation
 
-RailWayTransport URL: https://github.com/MasterTbo/RailWayTransport
+RailWayTransport URL: https://github.com/t-b-o/RailWayTransport
